@@ -1,10 +1,7 @@
 #ifndef QUICK_SORT_H
 #define QUICK_SORT_H
 
-struct Array {
-     int size;
-     int* elements;
-};
+#include "commons.h"
 
 class QuickSort
 {

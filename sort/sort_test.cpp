@@ -1,11 +1,13 @@
 #include <iostream>
+#include "utils.h"
 #include "quick_sort.h"
 
 using namespace std;
 
 int main()
 {
-   QuickSort sort;
+   QuickSort quickSort;
+
    int elems[5] = {1, 4, 6, 7, 3};
 
    Array elements;
@@ -13,11 +15,8 @@ int main()
    elements.size = 5;
    elements.elements = elems;
 
-   elements = sort.sort(elements);
-
-   for (int i = 0; i < elements.size; i++)
-      cout << elements.elements[i] << "; ";
-   cout << endl;
+   Utils::printInline("QuickSort: ");
+   Utils::printArray(quickSort.sort(elements));
    
    return 0;
 }
