@@ -1,5 +1,4 @@
 // Quick Sort
-#include <iostream>
 #include "utils.h"
 #include "quick_sort.h"
 
